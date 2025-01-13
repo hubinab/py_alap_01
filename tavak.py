@@ -33,5 +33,5 @@ print("\n")
 
 with open ("kozepes.txt", "w", encoding="utf-8") as fileki:
     for i in range(len(SzotarLista)):
-        if float(SzotarLista[i]["terulet"]) >= 3 and float(SzotarLista[i]["terulet"]) <= 10:
+        if float(SzotarLista[i]["terulet"]) >= 3 and float(SzotarLista[i]["terulet"]) <= 10 and int(SzotarLista[i]["vizgyujto"]) >= float(SzotarLista[i]["terulet"])*10:
             fileki.write(f"{SzotarLista[i]['nev']};{SzotarLista[i]['tipus']}\n")
